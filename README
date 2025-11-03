@@ -1,6 +1,6 @@
-# 🪶 Airflow Customer Orders Pipeline
+# Airflow Customer Orders Pipeline
 
-## 📘 Overview
+# Overview
 This project demonstrates an end-to-end data pipeline built using **Apache Airflow**.  
 The pipeline simulates ingestion, transformation, loading, analysis, and cleanup of two related datasets — **customers** and **orders** — to show how Airflow can orchestrate ETL workflows.
 
@@ -8,7 +8,7 @@ The DAG runs a complete pipeline from data generation to analysis with parallel 
 
 ---
 
-## ⚙️ Pipeline Steps
+# Pipeline Steps
 
 ### 1. **Ingestion**
 - **`generate_customers`**: Creates a fake customers dataset with name, age, and country.
@@ -30,7 +30,7 @@ The DAG runs a complete pipeline from data generation to analysis with parallel 
 
 ---
 
-## 🧩 DAG Structure
+## DAG Structure
 
 ![DAG Graph View](s2.png)
 ![Successful Run](s1.png)
