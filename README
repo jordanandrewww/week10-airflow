@@ -28,18 +28,11 @@ The DAG runs a complete pipeline from data generation to analysis with parallel 
 ### 5. Cleanup
 - **`cleanup`** removes all intermediate files from the `/opt/airflow/data` directory after successful execution.
 
----
-
-## DAG Structure
-
-![DAG Graph View](s2.png)
-
----
 
 ## Screenshots
 
-### Airflow UI
-![Airflow UI](s1.png)
+Screenshot 1: s1.png (included in this repo) shows the successful DAG execution in the Airflow UI
+Screenshot 2: s1.png (included in this repo) shows the DAG graph view
 
-### DAG Graph View
-![DAG Graph View](s2.png)
+
+
