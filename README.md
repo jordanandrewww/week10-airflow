@@ -31,8 +31,8 @@ The DAG runs a complete pipeline from data generation to analysis with parallel 
 
 ## Screenshots
 
-Screenshot 1: s1.png (included in this repo) shows the successful DAG execution in the Airflow UI
-Screenshot 2: s1.png (included in this repo) shows the DAG graph view
+Screenshot 1: ![DAG execution]s1.png (included in this repo) shows the successful DAG execution in the Airflow UI
+Screenshot 2: ![DAG graph view]s1.png (included in this repo) shows the DAG graph view
 
 
 
