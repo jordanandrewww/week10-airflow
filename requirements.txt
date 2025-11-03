@@ -1,0 +1,5 @@
+Faker==37.12.0
+apache-airflow-providers-postgres
+pandas
+matplotlib
+psycopg2-binary

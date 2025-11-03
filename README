@@ -1,0 +1,38 @@
+# 🪶 Airflow Customer Orders Pipeline
+
+## 📘 Overview
+This project demonstrates an end-to-end data pipeline built using **Apache Airflow**.  
+The pipeline simulates ingestion, transformation, loading, analysis, and cleanup of two related datasets — **customers** and **orders** — to show how Airflow can orchestrate ETL workflows.
+
+The DAG runs a complete pipeline from data generation to analysis with parallel execution of ingestion tasks.
+
+---
+
+## ⚙️ Pipeline Steps
+
+### 1. **Ingestion**
+- **`generate_customers`**: Creates a fake customers dataset with name, age, and country.
+- **`generate_orders`**: Creates a related orders dataset linked by `customer_id`.
+- Both tasks run **in parallel** and save CSV files to `/opt/airflow/data`.
+
+### 2. **Transformation**
+- **`merge_customers_orders`** merges the two datasets on `customer_id` and outputs `merged_orders_customers.csv`.
+
+### 3. **Loading**
+- **`load_to_pg`** loads the merged dataset into a PostgreSQL database (schema: `week8_demo`, table: `orders_customers`).
+
+### 4. **Analysis**
+- **`analyze_orders`** reads the data from PostgreSQL and generates a bar chart summarizing total order amounts by country.
+- The visualization is saved as `orders_per_country.png` in `/opt/airflow/data`.
+
+### 5. **Cleanup**
+- **`cleanup`** removes all intermediate files from the `/opt/airflow/data` directory after successful execution.
+
+---
+
+## 🧩 DAG Structure
+
+![DAG Graph View](s2.png)
+![Successful Run](s1.png)
+
+
