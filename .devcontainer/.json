@@ -1,0 +1,16 @@
+{
+  "name": "Airflow Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "airflow-webserver",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker"
+  ],
+  "postCreateCommand": "pip install -r requirements.txt",
+  "remoteUser": "vscode"
+}
